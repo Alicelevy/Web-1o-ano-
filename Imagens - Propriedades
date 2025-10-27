@@ -1,0 +1,27 @@
+html>
+    <head>
+        <style>
+            img{clip-path: circle(50%);}
+          #imagem1{filter:sepia(60%);
+           clip-path: circle(50% at right);}
+          #imagem2{filter: contrast(100%);
+           clip-path: circle(50%,35%);}
+          #imagem3{filter: grayscale(200%);
+            clip-path: polygon(50% 0%,100% 50%,50% 100%,0% 50%);}
+
+        </style>
+
+
+    </head>
+<body>
+    <h2>
+        Filtros
+    </h2>
+    <img id="imagem1" src="poderosa.webp" width="300px" height="300px">
+    <img id="imagem2" src="poderosa.webp"  width="300px" height="300px">
+    <img id="imagem3"  src="poderosa.webp" width="300px" height="300px">
+
+
+</body>
+
+</html>
