@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Léo Valdez — Engenheiro Descolado</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    :root{
+      --cobre-1: #6b2f09; /* bronze escuro */
+      --cobre-2: #b86b2f; /* cobre médio */
+      --cobre-3: #ffd9b3; /* cobre claro / destaque */
+      --bg: #fffaf6; /* fundo quente claro */
+      --muted: #6b6b6b;
+      --glass: rgba(255,255,255,0.6);
+    }
+    *{font-family: 'Poppins', sans-serif}
+    body{background: var(--bg); color: var(--cobre-1);}
+    .navbar{background: linear-gradient(90deg, rgba(184,107,47,0.06), rgba(107,47,9,0.03));}
+
+    /* Hero */
+    .hero{padding: 6rem 0;}
+    .hero .title{font-size: 2.25rem; font-weight:700;}
+    .hero .lead{font-size:1.05rem; color:var(--muted)}
+    .card-invention{border:0; border-radius:12px; box-shadow:0 6px 20px rgba(107,47,9,0.08);}
+
+    .badge-cobre{background: linear-gradient(90deg,var(--cobre-2),var(--cobre-1)); color: white;}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:1rem}
+    .timeline:before{content:'';position:absolute;left:0.6rem;top:0;border-left:3px dashed rgba(107,47,9,0.12);height:100%}
+    .timeline-item{position:relative;padding:1.25rem 1rem 1.25rem 2.5rem}
+    .timeline-item:before{content:'';position:absolute;left:0;top:1.25rem;width:12px;height:12px;background:var(--cobre-2);border-radius:50%}
+
+    /* Footer */
+    footer{padding:2.25rem 0;color:var(--muted)}
+
+    /* Button primary estilo cobre */
+    .btn-cobre{background: linear-gradient(90deg,var(--cobre-2),var(--cobre-1)); color:white; border:0}
+
+    /* Responsive tweaks */
+    @media (max-width:767px){
+      .hero{padding:3rem 0}
+      .hero .title{font-size:1.6rem}
+    }
+
+    /* Small playful accents */
+    .gear{transform: rotate(-12deg); opacity:0.85}
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <i class="bi bi-flame-fill text-warning"></i>
+        <span class="fw-bold">Léo Valdez</span>
+        <small class="text-muted">— Engenheiro Descolado</small>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Quem sou</a></li>
+          <li class="nav-item"><a class="nav-link" href="#inventions">Invenções</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Missões</a></li>
+          <li class="nav-item"><a class="nav-link btn btn-sm btn-cobre ms-lg-3 text-white" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <span class="badge badge-cobre py-2 px-3 rounded-pill">Engenheiro • Inventor • Meio-Sangue</span>
+          <h1 class="title mt-3">Léo Valdez</h1>
+          <p class="lead">Sou o cara que conserta o mundo (às vezes com fogo). Transformo sucata em solução e tenho diploma informal em <em>gambiarra aplicada</em>.</p>
+
+          <div class="mt-4 d-flex gap-2">
+            <a href="#inventions" class="btn btn-cobre btn-lg">Ver minhas invenções 💥</a>
+            <a href="#contact" class="btn btn-outline-secondary">Fale comigo</a>
+          </div>
+
+          <p class="mt-4 text-muted"><small>Tip: não me peça pra consertar micro-ondas com lava. Já tentei.</small></p>
+        </div>
+        <div class="col-md-6 text-center">
+          <!-- Substitua 'assets/leovaldez-fanart.jpg' pela fanart desejada -->
+          <img src="aapng" alt="Fanart Léo Valdez" class="img-fluid rounded-3 shadow" style="max-height:360px; object-fit:cover;">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="py-5 bg-transparent">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        <div class="col-lg-6">
+          <h3>Quem sou eu</h3>
+          <p class="text-muted">Me chamo Léo. Nasci com um pouco de fogo no sangue e muita curiosidade nas mãos. Minha especialidade? Transformar projetos improváveis em protótipos inevitáveis.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Experiência com autômatos e sistemas de curto-circuito criativo</li>
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Prototipagem rápida (e segura-ish)</li>
+            <li><i class="bi bi-check-circle-fill text-warning me-2"></i> Humor sarcástico incluso nos entregáveis</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="card card-invention p-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="flex-shrink-0">
+                <div class="bg-light rounded p-3 gear"><i class="bi bi-gear-fill fs-3 text-warning"></i></div>
+              </div>
+              <div>
+                <h5 class="mb-1">Habilidades</h5>
+                <p class="mb-0 text-muted">Soldagem, eletrônica básica, design mecânico, improviso com o que tiver à mão.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inventions -->
+  <section id="inventions" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h3>Minhas invenções</h3>
+        <small class="text-muted">Seleção limitada — riscos variam</small>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-invention p-3 h-100">
+            <img src="assets/inv-toast.jpg" class="card-img-top rounded" alt="Canhão de Torradas">
+            <div class="card-body">
+              <h5 class="card-title">Canhão Portátil de Torradas™</h5>
+              <p class="card-text text-muted">Porque café da manhã é uma missão sagrada. 90% eficiente, 100% crocante.</p>
+              <a href="#" class="stretched-link text-decoration-none text-cobre">Mostrar detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-invention p-3 h-100">
+            <img src="assets/inv-robot.jpg" class="card-img-top rounded" alt="Autômato 3.0">
+            <div class="card-body">
+              <h5 class="card-title">Autômato 3.0</h5>
+              <p class="card-text text-muted">Agora com 30% menos chance de se autodestruir. Firmware: temperamental.</p>
+              <a href="#" class="stretched-link text-decoration-none text-cobre">Mostrar detalhes</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card card-invention p-3 h-100">
+            <img src="assets/inv-lavacharger.jpg" class="card-img-top rounded" alt="Carregador de Lava">
+            <div class="card-body">
+              <h5 class="card-title">Carregador de Lava</h5>
+              <p class="card-text text-muted">Recarrega seu celular com energia geotérmica. Use proteção ocular.</p>
+              <a href="#" class="stretched-link text-decoration-none text-cobre">Mostrar detalhes</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects / Missions -->
+  <section id="projects" class="py-5 bg-transparent">
+    <div class="container">
+      <h3 class="mb-4">Missões concluídas</h3>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h5>Reconstrução do Argo II <small class="text-muted">— 2018</small></h5>
+          <p class="text-muted">Reformei, recarreguei e (com sorte) não explodi. Testes realizados com sucessos e fagulhas artísticas.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>Operação: Café da Manhã Seguro <small class="text-muted">— 2019</small></h5>
+          <p class="text-muted">Garantia de torradas perfeitas durante 48 horas. Pequenas chamas sob controle.</p>
+        </div>
+
+        <div class="timeline-item">
+          <h5>Resgate Tecnológico <small class="text-muted">— 2021</small></h5>
+          <p class="text-muted">Recuperei um servidor com fritura de componentes e muita coragem.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Contato</h3>
+          <p class="text-muted">Quer uma gambiarra profissional? Uma consultoria explosiva? Me chama.</p>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope-fill me-2 text-warning"></i> <strong>Email:</strong> <span class="text-muted">leo@forja.fake</span></li>
+            <li class="mt-2"><i class="bi bi-twitter me-2 text-warning"></i> <strong>Twitter:</strong> <span class="text-muted">@leovaldezforja</span></li>
+            <li class="mt-2"><i class="bi bi-instagram me-2 text-warning"></i> <strong>Insta:</strong> <span class="text-muted">@leovaldezartes</span></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div class="card p-3">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">Seu nome</label>
+                <input type="text" class="form-control" placeholder="Nome que vai mandar o pombo">
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Mensagem</label>
+                <textarea class="form-control" rows="4" placeholder="Diz aí, antes que algo exploda"></textarea>
+              </div>
+              <button class="btn btn-cobre">Enviar pombo mecânico</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-transparent mt-5">
+    <div class="container text-center">
+      <p class="mb-1">Feito com fogo, ferro e muita gambiarra.</p>
+      <small class="text-muted">© Léo Valdez — Portfólio fictício</small>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target){
+          e.preventDefault();
+          window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+
+  <!--
+    INSTRUÇÕES:
+    - Substitua as imagens em 'assets/*' pelas suas imagens reais (fanart do Léo e imagens das invenções).
+    - Se quiser alterar cores, edite as variáveis CSS :root no topo.
+    - Arquivo pronto para rodar localmente: salve como 'index.html' junto com uma pasta 'assets/'.
+  -->
+</body>
+</html>
+
