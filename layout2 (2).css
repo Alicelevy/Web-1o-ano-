@@ -1,0 +1,127 @@
+body{
+    background-color: blueviolet;
+}
+header{
+    background-color: brown;
+    border: 2px solid white;
+}
+header h1{
+    color: purple;
+    text-shadow: 2px 3px powderblue;
+    text-align: center;
+}
+main{
+    background-color: plum;
+    padding: 10px;
+    height: 1000px;
+}
+main nav{
+    background-color: pink;
+    color: palevioletred;
+    padding: 2px 0;
+    margin-bottom: 22px;
+    float: left;
+    width: 150px;
+    height: 100%;
+    font-size: 18px;
+    text-align: left;
+}
+main nav ul{
+    margin: 1em 0;
+    padding: 0;
+    list-style-type: none;
+    display: contents;
+
+}
+ main nav ul li{
+    padding: 0 10px;
+}
+ main nav  li a{
+    color: palegreen;
+    text-decoration: none;
+ }
+ main nav ul li a:hover{
+    color: peru;
+    background-color: palegoldenrod;
+    text-decoration: none;
+ }
+ main aside{
+    background-color: cornflowerblue;
+    width: var();
+    float: right;
+    width: 165px;
+    height: 100%;
+    border-left: 1px solid darkorchid;
+ }
+ main aside ul{
+    margin: 1em 0;
+ }
+ main aside ul li{
+    margin: 0 0 1em;
+    padding: 0;
+    list-style-type: none;
+ }
+ h3{
+    color: cornsilk;
+    text-align: center;
+ }
+ div{
+    background-color: chocolate;
+    color: aliceblue;
+    padding: 10 px;
+    border: 2px solid aquamarine;
+ }
+ footer{
+    background-color: burlywood;
+    color: brown;
+    text-align: center;
+ }
+ nav{
+    text-align: center;
+    padding: 5px;
+ }
+ nav ul{list-style-type: none;
+        display: flex;
+}
+nav ul li{
+    margin: auto;
+}
+nav ul li a{
+    text-decoration: none;
+    color: blue;
+}
+nav ul li a:hover{
+        background-color: burlywood;
+        color: darkolivegreen;
+        border-radius: 30px;
+        padding: 10px;
+
+}
+.img_float {
+    float: right;
+    padding: 2px;
+    border: 1px solid #9FA41D;
+    margin: 0 0 10px 10px;
+    width: 100px;
+    height: 100px; }
+    
+    table{
+    width: 60%;
+    padding-left: 90px;
+    table-layout: auto;}
+    
+    table img{
+    width: 80px;
+    height: 80px;}
+    
+    /* footer styles */
+    
+    footer {
+    background-color: blue;
+    color:white;
+    text-align: center;
+    font-size: 90%;
+    background: #9FA41D;
+    height: auto;
+    padding: 15px;
+    margin: 5px;
