@@ -1,0 +1,141 @@
+<html>
+<head>
+<style>
+#topo {
+  background: #dbcd87;
+  height: 15px;
+  min-height: 250px;
+}
+#area-logo {
+  position: absolute;
+  background: url(topo-imagem-principal.png) no-repeat;
+  width: 100%;
+  height: 250px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+#logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 3;
+  background: url(logo1.png) no-repeat;
+  width: 151px;
+  height: 66px;
+}
+#area-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(topo-imagem-lateral.png) no-repeat;
+  width: 450px;
+  height: 250px;
+  z-index: 2;
+}
+#menu { margin-top: 15px; }
+
+ul { list-style: none; float: left; }
+ul a {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  padding: 5px;
+  color: #6e672c;
+  line-height: 30px;
+}
+ul#navegacao a:hover { background: #fdf6be; }
+
+.depoimento {
+  width: 226px;
+  height: 164px;
+  float: right;
+}
+main {
+  height: 100%;
+  background-color: rgb(219, 191, 241);
+  padding: 20px;
+}
+main nav {
+  background: #d859e9;
+  color: #272900;
+  padding: 2px 0;
+  margin-bottom: 22px;
+  float: left;
+  width: 150px;
+  height: 100%;
+  font-size: 18px;
+  text-align: left;
+}
+main aside {
+  background-color: #7bcebc;
+  float: right;
+  width: 165px;
+  height: 100%;
+  text-align: center;
+  border-left: 1px solid #C5C877;
+}
+.filha {
+  float: left;
+  background-color: cornflowerblue;
+  width: 20%;
+  height: 20%;
+  margin: 10px;
+}
+footer { background-color: #7bcebc; }
+</style>
+</head>
+<body>
+<header>
+  <div id="topo">
+    <div id="area-logo">
+      <h1 id="logo"></h1>
+    </div>
+  </div>
+  <div id="area-menu">
+    <div id="menu">
+      <ul id="navegacao">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Estrutura</a></li>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Agenda</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+      <img class="depoimento" src="depoimento.png">
+    </div>
+  </div>
+</header>
+
+<main>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Ajuda</a></li>
+      <li><a href="#">Adotar</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <h3>Adoção</h3>
+    <h4>GATOS</h4>
+    <h4>CACHORROS</h4>
+    <hr>
+    <h3>Patrocinadores</h3>
+    <h4>Purina</h4>
+    <h4>Premier</h4>
+  </aside>
+
+  <div>
+    <div class="filha"></div>
+    <div class="filha"></div>
+    <div class="filha"></div>
+    <div class="filha"></div>
+    <div class="filha"></div>
+  </div>
+</main>
+
+<footer>
+  Ana Lúcia
+</footer>
+</body>
+</html>
